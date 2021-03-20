@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Felipe Amorim</title>
+    <link>https://felipos.github.io/</link>
+    <description>Recent content on Felipe Amorim</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <copyright>Copyright © 2020, Felipe Amorim.</copyright>
+    <lastBuildDate>Sun, 03 Jun 2018 00:00:00 +0000</lastBuildDate><atom:link href="https://felipos.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Incremental backup with rsync</title>
+      <link>https://felipos.github.io/incremental-backup-with-rsync/</link>
+      <pubDate>Sun, 03 Jun 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://felipos.github.io/incremental-backup-with-rsync/</guid>
+      <description>The following script is responsible for keeping my files safely stored in a incremental way. Eventually it will be useful to someone, so I&amp;rsquo;m leaving it here.
+#!/bin/sh rsync -avh --backup-dir=$(date +%F) \  --exclude=&amp;#39;sasaki/Downloads&amp;#39; \  --exclude=&amp;#39;sasaki/.local/share/Trash&amp;#39; \  /home/sasaki /mnt/Backup/ The options -avh are pretty well known to almost everybody but I&amp;rsquo;ll explain briefly: recursively copy preserving some metadata, like permissions (a). Also, be sure to print whats going on (v) with human readable units (h).</description>
+    </item>
+    
+  </channel>
+</rss>

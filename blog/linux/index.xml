@@ -14,8 +14,8 @@
       <pubDate>Sun, 03 Jun 2018 00:00:00 +0000</pubDate>
       
       <guid>https://felipos.github.io/incremental-backup-with-rsync/</guid>
-      <description>The following script is responsible for keeping my files safely stored in a incremental way. Eventually it will be useful to someone, so I&amp;rsquo;m leaving it here.
-#!/bin/sh rsync -avh --backup-dir=$(date +%F) \  --exclude=&amp;#39;sasaki/Downloads&amp;#39; \  --exclude=&amp;#39;sasaki/.local/share/Trash&amp;#39; \  /home/sasaki /mnt/Backup/ The options -avh are pretty well known to almost everybody but I&amp;rsquo;ll explain briefly: recursively copy preserving some metadata, like permissions (a). Also, be sure to print whats going on (v) with human readable units (h).</description>
+      <description>Dropbox, Google Drive and other cloud storage providers are useful but they won&amp;rsquo;t last forever. So, it&amp;rsquo;s useful to keep a local copy with you too. The following script is responsible for keeping my files safely stored in a incremental way on my homeserver. Eventually it will be useful to someone, so I&amp;rsquo;m leaving it here.
+#!/bin/sh rsync -avh --backup-dir=$(date +%F) \  --exclude=&amp;#39;sasaki/Downloads&amp;#39; \  --exclude=&amp;#39;sasaki/.local/share/Trash&amp;#39; \  /home/sasaki /mnt/Backup/ The options -avh are pretty well known to almost everybody but I&amp;rsquo;ll explain briefly: recursively copy preserving some metadata, like permissions (a).</description>
     </item>
     
   </channel>
